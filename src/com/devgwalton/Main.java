@@ -8,7 +8,6 @@ public class Main {
     private static final byte PERCENT = 100;
 
     public static void main(String[] args) {
-
         int principle = (int) readNumber("Principle: ", 1_000, 1_000_000);
         float annualInterest = (float) readNumber("Annual Interest Rate: ", 1, 30);
         byte years = (byte) readNumber("Period (Years): ", 1, 30);
@@ -43,7 +42,6 @@ public class Main {
     }
 
     private static double calculateBalance(int principle, float annualInterest, byte years, short paymentsMade) {
-
         float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEARS;
         short numberOfPayments = (short)(years * MONTHS_IN_YEARS);
 
@@ -56,7 +54,6 @@ public class Main {
     }
 
     private static double calculateMortgage(int principle, float annualInterest, byte years) {
-
         float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEARS;
         short numberOfPayments = (short)(years * MONTHS_IN_YEARS);
 
